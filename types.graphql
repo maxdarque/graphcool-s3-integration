@@ -1,0 +1,7 @@
+
+type Document @model {
+  createdAt: DateTime!
+  fileKey: String!
+  id: ID! @isUnique
+  name: String!
+}

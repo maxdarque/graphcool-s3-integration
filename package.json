@@ -1,0 +1,21 @@
+{
+  "name": "graphcool-s3-integration",
+  "version": "0.0.1",
+  "description": "Handles integration between AWS S3 and graphcool using presigned URLs",
+  "main": "index.js",
+  "repository": "git@github.com:maxdarque/graphcool-s3-integration.git",
+  "author": "Max",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "aws-sdk": "^2.176.0",
+    "graphcool-lib": "^0.1.4",
+    "graphql-request": "^1.4.1",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.2",
+    "typescript": "^2.6.2"
+  }
+}

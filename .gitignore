@@ -1,0 +1,8 @@
+node_modules/
+config/
+build/
+.envrc
+.DS_Store
+.build
+.direnv.sh
+playground.js

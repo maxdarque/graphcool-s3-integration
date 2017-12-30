@@ -1,0 +1,11 @@
+# getFileUploadUrl
+
+type UploadUrlPayload {
+  uploadUrl: String!
+  fileKey: String!
+}
+
+# parentName is the fundId
+extend type Mutation {
+  getFileUploadUrl(parentId: ID! fileName: String! tags: Json): UploadUrlPayload
+}

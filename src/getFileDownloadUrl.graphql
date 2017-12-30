@@ -1,0 +1,9 @@
+# getFileDownloadUrl
+
+type DownloadUrlPayload {
+  fileDownloadUrl: String!
+}
+
+extend type Mutation {
+  getFileDownloadUrl(fileId: ID!): DownloadUrlPayload
+}
