@@ -3,10 +3,10 @@ functions:
   # getFileUploadUrl for AWS S3 for user
   getFileUploadUrl:
     type: resolver
-    schema: functions/fileManagement/getFileUploadUrl.graphql
+    schema: src/getFileUploadUrl.graphql
     handler:
       code:
-        src: functions/fileManagement/getFileUploadUrl.ts
+        src: src/getFileUploadUrl.ts
         environment:
           AWS_BUCKET_GP_FILES: ${env:AWS_BUCKET_GP_FILES}
           AWS_DEFAULT_REGION: ${env:AWS_DEFAULT_REGION}
@@ -16,10 +16,10 @@ functions:
   # getFileDownloadUrl for AWS S3 for user          
   getFileDownloadUrl:
     type: resolver
-    schema: functions/fileManagement/getFileDownloadUrl.graphql
+    schema: src/getFileDownloadUrl.graphql
     handler:
       code:
-        src: functions/fileManagement/getFileDownloadUrl.ts
+        src: src/getFileDownloadUrl.ts
         environment:
           AWS_BUCKET_GP_FILES: ${env:AWS_BUCKET_GP_FILES}
           AWS_DEFAULT_REGION: ${env:AWS_DEFAULT_REGION}
@@ -31,7 +31,7 @@ functions:
     operation: Document.delete
     handler:
       code:
-        src: functions/fileManagement/deleteFileFromS3.ts
+        src: src/deleteFileFromS3.ts
         environment:
           AWS_BUCKET_GP_FILES: ${env:AWS_BUCKET_GP_FILES}
           AWS_DEFAULT_REGION: ${env:AWS_DEFAULT_REGION}
