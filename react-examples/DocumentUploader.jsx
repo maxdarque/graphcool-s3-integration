@@ -132,7 +132,7 @@ export class DocumentUploader extends React.Component {
             <button type="button" className="btn btn-primary btn-sm mx-1" onClick={() => this.uploadFiles()}>Upload</button>
             <button type="button" className="btn btn-primary btn-sm mx-1" onClick={() => this.clearFiles()}>Clear</button>
           </div>
-          {filteredFiles.map( file => <div key={file.userInterfaceId}>{file.name}</div>)}
+          {files.map( file => <div key={file.userInterfaceId}>{file.name}</div>)}
         </div>}
       </div>
     )
