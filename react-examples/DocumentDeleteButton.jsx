@@ -11,7 +11,6 @@ const deleteDocument = gql`
 `;
 
 const handleDeleteDocument = (documentId, deleteDocument) => {
-  const { fundId } = this.props;
   const variables = { documentId };
   deleteDocument({ variables })
   .then( response => console.log('Document successfully deleted', response) )
